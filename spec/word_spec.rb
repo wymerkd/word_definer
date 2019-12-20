@@ -73,7 +73,7 @@ describe '#Word' do
   end
 
   describe('#sort') do
-    it("sorts word bank by word") do
+    it("sorts word bank alphabetically by word") do
       word = Word.new(nil, "bumfuzzle")
         word.save()
         word2 = Word.new(nil, "snickersnee")
