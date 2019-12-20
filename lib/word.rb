@@ -29,4 +29,8 @@ class Word
   def delete #deletes a word by id
     @@words.delete(self.id)
   end
+
+  def update(word_input)
+    @word_input = word_input
+  end
 end
