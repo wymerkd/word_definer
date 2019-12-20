@@ -20,4 +20,8 @@ class Word
   def save
     @@words[self.id] = Word.new(self.id, self.word_input)
   end
+
+  def delete
+    @@words.delete(self.id)
+  end
 end
