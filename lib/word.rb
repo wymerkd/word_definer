@@ -21,12 +21,12 @@ class Word
     @@words.values()
   end
 
-  def self.clear
+  def self.clear #clears array of words
     @@total_rows = 0
     @@words = {}
   end
 
-  def delete
+  def delete #deletes a word by id
     @@words.delete(self.id)
   end
 end
