@@ -54,13 +54,21 @@ describe '#Word' do
   end
 
   describe('#update') do
-      it("updates a word by id") do
-        word = Word.new(nil, "bumfuzzle")
-        word.save()
-        word.update("bumfizzlefazzle")
-        expect(word.word_input).to(eq("bumfizzlefazzle"))
-      end
+    it("updates a word by id") do
+      word = Word.new(nil, "bumfuzzle")
+      word.save()
+      word.update("bumfizzlefazzle")
+      expect(word.word_input).to(eq("bumfizzlefazzle"))
     end
+  end
 
-
+  describe('.find') do
+    it("finds a word by id") do
+      word = Word.new(nil, "bumfuzzle")
+      word.save()
+      word2 = Word.new(nil, "cattywampus")
+      word2.save()
+      expect(Word.find(word.id)).to(eq(word))
+    end
+  end
 end
