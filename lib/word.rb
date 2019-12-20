@@ -9,11 +9,13 @@ class Word
     @word_input = word_input
   end
 
-  def ==(word_to_compare)
+  def ==(word_to_compare) #comparing if two words are the same
     self.word_input() == word_to_compare.word_input()
   end
 
-  def self.all
+  def self.all #stores values of all words
     @@words.values()
   end
+
+
 end
