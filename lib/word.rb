@@ -33,4 +33,8 @@ class Word
   def update(word_input)
     @word_input = word_input
   end
+
+  def self.find(id)
+    @@words[id]
+  end
 end
