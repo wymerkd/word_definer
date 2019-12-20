@@ -21,10 +21,10 @@ class Word
     @@words.values()
   end
 
-  # def self.clear
-  #   @@total_rows = 0
-  #   @@words = {}
-  # end
+  def self.clear
+    @@total_rows = 0
+    @@words = {}
+  end
 
   # def delete
   #   @@words.delete(self.id)
