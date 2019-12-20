@@ -26,7 +26,7 @@ class Word
     @@words = {}
   end
 
-  # def delete
-  #   @@words.delete(self.id)
-  # end
+  def delete
+    @@words.delete(self.id)
+  end
 end
