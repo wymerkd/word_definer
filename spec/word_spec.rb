@@ -26,8 +26,19 @@ describe('#save') do
   it("saves a word") do
     word = Word.new(nil, "bumfuzzle") # nil, nil added as second argument
     word.save()
-    word2 = Word.new(nil, "cattywampus" ) # nil, nil added as second argument
+    word2 = Word.new(nil, "cattywampus") # nil, nil added as second argument
     word2.save()
     expect(Word.all).to(eq([word, word2]))
+  end
+end
+
+describe('#delete') do
+  it("deletes a word by id") do
+    word = Word.new(nil, "bumfuzzle")
+    word.save()
+    word2 = Word.new(nil, "cattywampus")
+    word2.save()
+    word.delete()
+    expect(Word.all).to(eq([word2]))
   end
 end

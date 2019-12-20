@@ -1,7 +1,5 @@
 <h1>My Dictionary</h1>
 
-<h3>Word Bank</h3>
-
 <form action="/words">
   <div class="form-group">
     <label for="search_input">Search</label>
@@ -10,10 +8,11 @@
   <button type="submit" class="btn-success">SEARCH!</button>
 </form>
 
+<h3>Word Bank</h3>
 <% if @words.any? %>
 <ul>
   <% @words.each do |word| %>
-  <h4><a href="/words/<%= word.id %>"><%= word.word_input%></a></h4>
+  <li><a href="/words/<%= word.id %>"><%= word.word_input%></a></li>
   <% end %>
 </ul>
 <% else %>
