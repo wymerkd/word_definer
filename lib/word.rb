@@ -12,4 +12,8 @@ class Word
   def ==(word_to_compare)
     self.word_input() == word_to_compare.word_input()
   end
+
+  def self.all
+    @@words.values()
+  end
 end
