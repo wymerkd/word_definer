@@ -38,7 +38,7 @@ class Word
     @@words[id]
   end
 
-  def self.sort
+  def self.list
     @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
   end
 end

@@ -72,7 +72,7 @@ describe '#Word' do
     end
   end
 
-  describe('#sort') do
+  describe('#list') do
     it("sorts word bank alphabetically by word") do
       word = Word.new(nil, "bumfuzzle")
         word.save()
@@ -80,7 +80,7 @@ describe '#Word' do
         word2.save()
         word3 = Word.new(nil, "cattywampus")
         word3.save()
-      expect(Word.sort).to(eq([word, word3, word2]))
+      expect(Word.list).to(eq([word, word3, word2]))
     end
   end
 end
