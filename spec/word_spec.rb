@@ -8,12 +8,28 @@ describe '#Word' do
   end
 end
 
-describe('#save') do
-    it("saves a word") do
-      word = Word.new(nil, "bumfuzzle") # nil, nil added as second argument
-      album.save()
-      album2 = Word.new(nil, "cattywampus" ) # nil, nil added as second argument
-      word2.save()
-      expect(Word.all).to(eq([album, album2]))
+describe('#==') do
+    it("is the same word if it has the same attributes as another word") do
+      word = Word.new(nil, "cattywampus")
+      word2 = Word.new(nil, "cattywampus")
+      expect(word).to(eq(word2))
     end
   end
+
+
+
+
+
+
+
+
+
+# describe('#save') do
+#     it("saves a word") do
+#       word = Word.new(nil, "bumfuzzle") # nil, nil added as second argument
+#       word.save()
+#       word2 = Word.new(nil, "cattywampus" ) # nil, nil added as second argument
+#       word2.save()
+#       expect(Word.all).to(eq([word, word2]))
+#     end
+#   end
