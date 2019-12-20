@@ -71,4 +71,16 @@ describe '#Word' do
       expect(Word.find(word.id)).to(eq(word))
     end
   end
+
+  describe('#sort') do
+    it("sorts word bank by word") do
+      word = Word.new(nil, "bumfuzzle")
+        word.save()
+        word2 = Word.new(nil, "snickersnee")
+        word2.save()
+        word3 = Word.new(nil, "cattywampus")
+        word3.save()
+      expect(Word.sort).to(eq([word, word3, word2]))
+    end
+  end
 end
