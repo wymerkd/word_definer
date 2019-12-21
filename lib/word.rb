@@ -18,7 +18,7 @@ class Word
   end
 
   def self.all #stores values of all words
-    @@words.values()
+    # @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
   end
 
   def self.clear #clears array of words
@@ -36,9 +36,5 @@ class Word
 
   def self.find(id)
     @@words[id]
-  end
-
-  def self.list
-    @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
   end
 end
