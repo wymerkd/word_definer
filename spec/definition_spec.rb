@@ -22,7 +22,7 @@ describe '#Definition' do
 
   describe('.all') do
     it("returns a list of all definitions") do
-      definition = Definition.new(@word.id, nil)
+      definition = Definition.new("not lined up evenly on each side", @word.id, nil)
       definition.save()
       definition2 = Definition.new("not exactly centered or straight", @word.id, nil)
       definition2.save()
