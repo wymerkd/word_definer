@@ -1,3 +1,4 @@
+
 require 'rspec'
 require 'definition'
 require 'word'
@@ -38,6 +39,14 @@ describe '#Definition' do
       definition2.save()
       Definition.clear()
       expect(Definition.all).to(eq([]))
+    end
+  end
+
+  describe('#save') do
+    it("saves a definition") do
+      definition = Definition.new("not lined up evenly on each side", @word.id, nil)
+      definition.save()
+      expect(Definition.all).to(eq([definition]))
     end
   end
 end
