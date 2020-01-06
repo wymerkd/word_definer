@@ -6,7 +6,7 @@
 
 ## Description
 
-_This project demonstrates my current skills Ruby. The application allows a user to input multiple words and add multiple definitions. The user is also able to update and delete words and definitions._
+_This project demonstrates my current skills in Ruby. The application allows a user to input multiple words and add multiple definitions. The user is also able to update and delete words and definitions._
 
 
 ## Specifications
