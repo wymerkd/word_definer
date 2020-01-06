@@ -13,11 +13,7 @@ get('/') do
 end
 
 get('/words') do
-  if params["search"]
-    @words = Word.search(params[:search])
-  else
-    @words = Word.all
-  end
+  @words = Word.all
   erb(:words)
 end
 
@@ -27,7 +23,7 @@ end
 
 post('/words') do
   word_input = params[:user_word]
-  word = Word.new(word_input, nil)
+  word = Word.new(nil, word_input)
   word.save()
   @words = Word.all()
   erb(:words)

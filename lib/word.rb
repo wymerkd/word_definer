@@ -39,6 +39,7 @@ class Word
     @@words.delete(self.id)
   end
 
+
   def self.find_by_word(wrd_id)
     definitions = []
     @@definitions.values.each do |definition|
