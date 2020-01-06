@@ -1,3 +1,4 @@
+
 require 'rspec'
 require 'word'
 require 'definition'
@@ -73,15 +74,15 @@ describe '#Word' do
     end
   end
 
-  describe('.all') do
+  describe('.sort') do
     it("sorts word bank alphabetically by word") do
       word = Word.new(nil, "bumfuzzle")
-        word.save()
-        word2 = Word.new(nil, "snickersnee")
-        word2.save()
-        word3 = Word.new(nil, "cattywampus")
-        word3.save()
-      expect(Word.all).to(eq([word, word3, word2]))
+      word.save()
+      word2 = Word.new(nil, "snickersnee")
+      word2.save()
+      word3 = Word.new(nil, "cattywampus")
+      word3.save()
+      expect(Word.sort).to(eq([word, word3, word2]))
     end
   end
 end

@@ -9,17 +9,20 @@ class Word
     @word_input = word_input
   end
 
-  def self.all #stores values of all words
-    @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
+  def update(word_input)
+    @word_input = word_input
   end
 
+  def save
+    @@words[self.id] = Word.new(self.id, self.word_input)
+  end
 
   def ==(word_to_compare) #comparing if two words are the same
     self.word_input() == word_to_compare.word_input()
   end
 
-  def save
-    @@words[self.id] = Word.new(self.id, self.word_input)
+  def self.all
+    @@words.values()
   end
 
   def self.clear #clears array of words
@@ -31,23 +34,12 @@ class Word
     @@words[id]
   end
 
-  def update(word_input)
-    @word_input = word_input
-  end
-
   def delete #deletes a word by id
     @@words.delete(self.id)
   end
 
-
-  def self.find_by_word(wrd_id)
-    definitions = []
-    @@definitions.values.each do |definition|
-      if definition.word_id == wrd_id
-        definitions.push(definition)
-      end
-    end
-    definitions
+  def self.sort #stores values of all words
+    @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
   end
 
   def definitions
