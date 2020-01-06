@@ -18,16 +18,16 @@ class Definition
   def self.clear
     @@definitions = {}
   end
+
+  def self.all
+    @@definitions.values
+  end
+
+  def save
+    @@definitions[self.id] = Definition.new(self.name, self.word_id, self.id)
+  end
 end
 
-  # def self.all
-  #   @@definitions.values
-  # end
-  #
-  # def save
-  #   @@definitions[self.id] = Definition.new(self.name, self.word_id, self.id)
-  # end
-  #
   # def self.clear
   #   @@definitions = {}
   # end
