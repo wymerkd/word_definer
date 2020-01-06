@@ -11,11 +11,11 @@ _This project demonstrates my current skills Ruby. The application allows a user
 
 ## Specifications
 
-|---|
-| Application allows a user to input a word |
-| Application allows a user to add multiple definitions to a word |
-| Application allows a user to edit and delete words and definitions |
-| Application automatically sorts inputted words alphabetically |
+
+* _Application allows a user to input a word_
+* _Application allows a user to add multiple definitions to a word_
+* _Application allows a user to edit and delete words and definitions_
+* _Application automatically sorts inputted words alphabetically_
 
 
 ## Setup/Installation Requirements
