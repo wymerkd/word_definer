@@ -9,16 +9,22 @@ class Word
     @word_input = word_input
   end
 
-  def ==(word_to_compare) #comparing if two words are the same
-    self.word_input() == word_to_compare.word_input()
-  end
-
   def self.all #stores values of all words
     @@words.values.sort {|a, b| a.word_input.downcase <=> b.word_input.downcase}
   end
 
+
+  def ==(word_to_compare) #comparing if two words are the same
+    self.word_input() == word_to_compare.word_input()
+  end
+
   def save
     @@words[self.id] = Word.new(self.id, self.word_input)
+  end
+
+  def self.clear #clears array of words
+    @@total_rows = 0
+    @@words = {}
   end
 
   def self.find(id)
@@ -31,11 +37,6 @@ class Word
 
   def delete #deletes a word by id
     @@words.delete(self.id)
-  end
-
-  def self.clear #clears array of words
-    @@total_rows = 0
-    @@words = {}
   end
 
   def self.find_by_word(wrd_id)

@@ -1,36 +1,26 @@
-# _Anagrams_
+# _Word Definer_
 
-#### _An application that takes in two inputs from a user to determine if they are anagrams or not, 12/13/2019_
+#### _An application that allows a user to input words and add multiple definitions., 12/21/2019_
 
 #### By _**Kyle Wymer**_
 
 ## Description
 
-_This project demonstrates my current skills Ruby. The application runs the user's inputs through a serious of methods to determine if they are anagrams or not._
+_This project demonstrates my current skills Ruby. The application allows a user to input multiple words and add multiple definitions. The user is also able to update and delete words and definitions._
 
 
 ## Specifications
 
-|  Behavior | Input  | Output  |
-|---|---|---|
-| Application checks if two words are anagrams | "ruby", "bury" | "These words are anagrams." |
-| Application checks if two words are not anagrams | "ruby", "rails" | "These words are not anagrams." |
-| Application accounts for the possibility that words might have different cases but should still be anagrams | "Ruby", "Bury" | "These words are anagrams." |
-| Application checks if two words are actual words | "ruby", "bury" | "These are real words."|
-| Application checks if two words are not actual words | "ruby", "br" | "You need to input actual words!" |
-| Application checks if two words are antigrams | "ruby", "hello" | "These words have no letter matches and are antigrams."|
-| Application checks if two words have letter matches | "ruby", "bury" | "These words have letter matches." |
-| Application checks if two phrases are anagrams| "mother-in-law?", "woman hitler!" | "These words are anagrams."|
-| Application checks if two phrases are not anagrams | "knock knock", "who's there?" | "These words are not anagrams."|
-
+|---|
+| Application allows a user to input a word |
+| Application allows a user to add multiple definitions to a word |
+| Application allows a user to edit and delete words and definitions |
+| Application automatically sorts inputted words alphabetically |
 
 
 ## Setup/Installation Requirements
 
-* _Clone or download the repository from GitHub_
-* _In the terminal, run $ gem install bundler_
-* _To interact with application, in the terminal run $ chmod +x anagram_script.rb_
-* _Then run $ ./anagram_script.rb_
+* _Open the application using the link provided ()
 
 ## Known Bugs
 
@@ -44,11 +34,9 @@ _Please contact Kyle Wymer, at wymerkd@gmail.com if support is needed_
 
 * _Ruby 2.5.1_
 * _Gemfile_
+* _Sinatra_
+* _Capybara_
 
-## Resources Used
-* _https://irb.rocks/comparison-arrays-ruby/_
-* _https://stackoverflow.com/questions/21446369/deleting-all-special-characters-from-a-string-ruby/21446469_
-* _https://stackoverflow.com/questions/1634750/ruby-function-to-remove-all-white-spaces_
 
 ### License
 

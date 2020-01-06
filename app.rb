@@ -27,7 +27,7 @@ end
 
 post('/words') do
   word_input = params[:user_word]
-  word = Word.new(nil, word_input)
+  word = Word.new(word_input, nil)
   word.save()
   @words = Word.all()
   erb(:words)
