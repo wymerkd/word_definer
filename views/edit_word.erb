@@ -5,13 +5,15 @@
 
   <label for="user_word">Change word to:</label>
   <input id="user_word" name="user_word" type="text">
-
-  <p><a href="/words">Return to Word Bank</a></p>
+  <br>
   <button type="submit"class="danger">Update</button>
 </form>
 
+<br>
 <form action="/words/<%= @word.id() %>" method="post">
   <input name="_method" type="hidden" value="delete">
 
   <button type="submit"class="danger">Delete Word</button>
 </form>
+<br>
+<p><a href="/words">Return to Word Bank</a></p>

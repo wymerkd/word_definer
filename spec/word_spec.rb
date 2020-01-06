@@ -32,7 +32,7 @@ describe '#Word' do
   end
 
   describe('.clear') do
-    it("clears all albums") do
+    it("clears all words") do
       word = Word.new(nil, "bumfuzzle")
       word.save()
       word2 = Word.new(nil, "cattywampus")
