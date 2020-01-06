@@ -15,10 +15,7 @@ class Definition
     (self.name() == definition_to_compare.name()) && (self.word_id() == definition_to_compare.word_id())
   end
 
-  def self.clear
-    @@definitions = {}
-  end
-
+  
   def self.all
     @@definitions.values
   end
@@ -27,7 +24,3 @@ class Definition
     @@definitions[self.id] = Definition.new(self.name, self.word_id, self.id)
   end
 end
-
-  # def self.clear
-  #   @@definitions = {}
-  # end
