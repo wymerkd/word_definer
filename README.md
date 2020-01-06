@@ -20,7 +20,7 @@ _This project demonstrates my current skills Ruby. The application allows a user
 
 ## Setup/Installation Requirements
 
-* _Open the application using the link provided ()
+* _Open the application using the link provided (https://obscure-basin-11408.herokuapp.com/)_
 
 ## Known Bugs
 
