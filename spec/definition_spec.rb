@@ -1,4 +1,3 @@
-
 require 'rspec'
 require 'definition'
 require 'word'
@@ -57,6 +56,15 @@ describe '#Definition' do
       definition2 = Definition.new("not exactly centered or straight", @word.id, nil)
       definition2.save()
       expect(Definition.find(definition.id)).to(eq(definition))
+    end
+  end
+
+  describe('#update') do
+    it("updates a definition by id") do
+      definition = Definition.new("not lined up evenly on each side", @word.id, nil)
+      definition.save()
+      definition.update("not exactly centered or straight", @word.id,)
+      expect(definition.name).to(eq("not exactly centered or straight"))
     end
   end
 end
