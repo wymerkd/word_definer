@@ -20,7 +20,7 @@ _This project demonstrates my current skills in Ruby. The application allows a u
 
 ## Setup/Installation Requirements
 
-* _Open the application using the link provided (https://obscure-basin-11408.herokuapp.com/)_
+* _Open the application using the link provided (https://git.heroku.com/aqueous-dawn-46481.git)_
 
 ## Known Bugs
 
