@@ -18,7 +18,6 @@ describe('create a definition path', {:type => :feature}) do
     word = Word.new("cattywampus", 1)
     word.save
     visit("/words/1")
-    save_and_open_page
     fill_in('user_definition', :with => "not lined up evenly on each side")
     click_on('Add definition')
     expect(page).to have_content("not lined up evenly on each side")
