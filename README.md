@@ -21,10 +21,10 @@ _This project demonstrates my current skills in Ruby. The application allows a u
 ## Setup/Installation Requirements
 * _Clone or download the repository from GitHub_
 * _Navigate to the root directory of the cloned repository via terminal_
-* _In the terminal, run $ gem install bundler_
+* _In the terminal, run $ bundle install_
 * _Then run $ ruby app.rb_
 * _In your browser connect to localhost:4567_
-* _OR_
+* _Or_
 * _Open the application using the link provided (https://aqueous-dawn-46481.herokuapp.com/)_
 
 ## Known Bugs
